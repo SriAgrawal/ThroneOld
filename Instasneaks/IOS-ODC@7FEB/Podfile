@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'Throne' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+    use_frameworks!
+
+    # Pods for Throne
+
+    pod 'Braintree', '~> 4.7.5'
+    pod 'Analytics', '~> 3.0'
+    pod 'Leanplum-iOS-SDK’,’~> 1.4.3'
+	pod 'DZNEmptyDataSet'
+    pod 'ZendeskSDK', '~> 1.9.0.1'
+    pod 'Flurry-iOS-SDK/FlurrySDK', '~> 7.1.0'
+    pod ‘Branch’
+
+end

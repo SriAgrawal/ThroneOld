@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mostardesign - SofiaProLight.otf">
+            <string>SofiaProLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TAWhatDoYouSellCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zs-3o-XVd">
+                        <rect key="frame" x="15" y="16" width="262" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PTJ-p8-HBr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od5-AO-1yB">
+                        <rect key="frame" x="0.0" y="42" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fdK-8g-y6D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="c2G-Vu-vSG">
+                        <rect key="frame" x="284" y="18" width="12" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="BLK-tw-hY1"/>
+                            <constraint firstAttribute="width" constant="12" id="ht0-hd-shw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6zs-3o-XVd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="2sH-7n-uud"/>
+                    <constraint firstAttribute="trailing" secondItem="c2G-Vu-vSG" secondAttribute="trailing" constant="24" id="cBA-SJ-iyE"/>
+                    <constraint firstItem="6zs-3o-XVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jMM-78-fVF"/>
+                    <constraint firstItem="od5-AO-1yB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ltk-3t-lhX"/>
+                    <constraint firstAttribute="trailing" secondItem="od5-AO-1yB" secondAttribute="trailing" id="nCK-Ty-aRy"/>
+                    <constraint firstAttribute="bottom" secondItem="od5-AO-1yB" secondAttribute="bottom" id="qgg-8O-hT4"/>
+                    <constraint firstItem="c2G-Vu-vSG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="r42-ti-RMx"/>
+                    <constraint firstAttribute="trailing" secondItem="6zs-3o-XVd" secondAttribute="trailing" constant="43" id="y3Z-hh-HqR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkMarkImageView" destination="c2G-Vu-vSG" id="pLa-gg-ZEo"/>
+                <outlet property="seperatorLabel" destination="od5-AO-1yB" id="Q0G-EV-njW"/>
+                <outlet property="titleLabel" destination="6zs-3o-XVd" id="oh2-OZ-wP2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="15" height="12"/>
+    </resources>
+</document>

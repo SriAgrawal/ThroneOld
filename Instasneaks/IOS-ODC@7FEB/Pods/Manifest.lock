@@ -1,0 +1,60 @@
+PODS:
+  - Analytics (3.6.0)
+  - Braintree (4.7.5):
+    - Braintree/Card (= 4.7.5)
+    - Braintree/Core (= 4.7.5)
+    - Braintree/PayPal (= 4.7.5)
+    - Braintree/UI (= 4.7.5)
+  - Braintree/Card (4.7.5):
+    - Braintree/Core
+  - Braintree/Core (4.7.5)
+  - Braintree/PayPal (4.7.5):
+    - Braintree/Core
+    - Braintree/PayPalOneTouch
+  - Braintree/PayPalDataCollector (4.7.5):
+    - Braintree/Core
+    - Braintree/PayPalUtils
+  - Braintree/PayPalOneTouch (4.7.5):
+    - Braintree/Core
+    - Braintree/PayPalDataCollector
+    - Braintree/PayPalUtils
+  - Braintree/PayPalUtils (4.7.5)
+  - Braintree/UI (4.7.5):
+    - Braintree/Card
+    - Braintree/Core
+  - Branch (0.13.5):
+    - Branch/Core (= 0.13.5)
+    - Branch/without-IDFA (= 0.13.5)
+  - Branch/Core (0.13.5)
+  - Branch/without-IDFA (0.13.5)
+  - DZNEmptyDataSet (1.8.1)
+  - Flurry-iOS-SDK/FlurrySDK (7.1.1)
+  - Leanplum-iOS-SDK (1.4.3)
+  - ZendeskSDK (1.9.0.1):
+    - ZendeskSDK/Providers (= 1.9.0.1)
+    - ZendeskSDK/UI (= 1.9.0.1)
+  - ZendeskSDK/Providers (1.9.0.1)
+  - ZendeskSDK/UI (1.9.0.1):
+    - ZendeskSDK/Providers
+
+DEPENDENCIES:
+  - Analytics (~> 3.0)
+  - Braintree (~> 4.7.5)
+  - Branch
+  - DZNEmptyDataSet
+  - Flurry-iOS-SDK/FlurrySDK (~> 7.1.0)
+  - Leanplum-iOS-SDK (~> 1.4.3)
+  - ZendeskSDK (~> 1.9.0.1)
+
+SPEC CHECKSUMS:
+  Analytics: 15be3e651d22cc811f44df65698538236676437b
+  Braintree: 07a215df0cb2d06997e39df564f9ae175908b0e9
+  Branch: 08e40d84f20b188443fd808fe01dadcc13d1727e
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Flurry-iOS-SDK: 83fd4f40ae66e80d122fd2f6698f0e0c31021a63
+  Leanplum-iOS-SDK: 4b12eb749ec0a0915892548a9703474f5c18ae07
+  ZendeskSDK: af260de39d564b33ae35866342d4511586807384
+
+PODFILE CHECKSUM: d4eaaf7872850e083e9629797fb50f5989deeb03
+
+COCOAPODS: 1.0.1

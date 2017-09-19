@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mostardesign - SofiaPro-Bold.otf">
+            <string>SofiaPro-Bold</string>
+        </array>
+        <array key="Mostardesign - SofiaProLight.otf">
+            <string>SofiaProLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TAUpgradePopupVC">
+            <connections>
+                <outlet property="bodyLabel" destination="ORU-uK-HO2" id="QZY-dp-3BD"/>
+                <outlet property="headerLabel" destination="qV0-tW-oSh" id="fvE-Ui-M9x"/>
+                <outlet property="topConstraint" destination="9wk-1c-oFx" id="LSJ-eJ-Ibc"/>
+                <outlet property="upgradeBtnOutlet" destination="uxN-rI-vGK" id="u8K-wi-8aJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="511"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtB-7Q-a73">
+                    <rect key="frame" x="14" y="159" width="345" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vw9-QB-CZA">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="155"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="large-x" translatesAutoresizingMaskIntoConstraints="NO" id="ODy-2y-08k">
+                                    <rect key="frame" x="324" y="14" width="11" height="11"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="11" id="8iz-xQ-Fid"/>
+                                        <constraint firstAttribute="height" constant="11.5" id="oQW-v8-Afo"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPGRADE TO BUSINESS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-tW-oSh">
+                                    <rect key="frame" x="15" y="23" width="156" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="CrW-De-P3C"/>
+                                        <constraint firstAttribute="width" constant="156" id="ICe-0b-dwz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE UPGRADE TO A BUSINESS PROFILE IN ORDER TO ACCESS THIS FEATURE" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORU-uK-HO2">
+                                    <rect key="frame" x="15" y="40" width="298" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="SofiaProLight" family="Sofia Pro" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-4W-8IU">
+                                    <rect key="frame" x="315" y="7" width="30" height="22"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="22E-cT-ve2"/>
+                                        <constraint firstAttribute="width" constant="30" id="qfV-dp-hWe"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="crossBtnAction:" destination="-1" eventType="touchUpInside" id="o2g-CJ-9w4"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-va-iFU">
+                                    <rect key="frame" x="15" y="84" width="315" height="1"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Y4F-VP-e6T"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxN-rI-vGK">
+                                    <rect key="frame" x="101" y="103" width="144" height="38"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="a1g-V0-4zQ"/>
+                                        <constraint firstAttribute="width" constant="144" id="e5Z-4U-N4z"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="14"/>
+                                    <state key="normal" title="UPGRADE">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="upgradeBtnAction:" destination="-1" eventType="touchUpInside" id="rqd-L3-hb1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97647058819999999" green="0.87843137250000003" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="tj1-4W-8IU" firstAttribute="top" secondItem="vw9-QB-CZA" secondAttribute="top" constant="7" id="4Ap-OF-Tni"/>
+                                <constraint firstItem="ORU-uK-HO2" firstAttribute="top" secondItem="qV0-tW-oSh" secondAttribute="bottom" constant="3" id="5Vs-nE-FNW"/>
+                                <constraint firstItem="U8G-va-iFU" firstAttribute="top" secondItem="ORU-uK-HO2" secondAttribute="bottom" constant="24.5" id="9wk-1c-oFx"/>
+                                <constraint firstItem="qV0-tW-oSh" firstAttribute="leading" secondItem="vw9-QB-CZA" secondAttribute="leading" constant="15" id="EDg-Cp-bAh"/>
+                                <constraint firstItem="ODy-2y-08k" firstAttribute="top" secondItem="vw9-QB-CZA" secondAttribute="top" constant="13.5" id="JHN-H5-bCX"/>
+                                <constraint firstAttribute="trailing" secondItem="ORU-uK-HO2" secondAttribute="trailing" constant="32" id="MSt-to-5LH"/>
+                                <constraint firstItem="ORU-uK-HO2" firstAttribute="leading" secondItem="vw9-QB-CZA" secondAttribute="leading" constant="15" id="Nwe-1N-gZB"/>
+                                <constraint firstAttribute="trailing" secondItem="U8G-va-iFU" secondAttribute="trailing" constant="15" id="Qyw-ds-Mw5"/>
+                                <constraint firstItem="uxN-rI-vGK" firstAttribute="top" secondItem="U8G-va-iFU" secondAttribute="bottom" constant="17.5" id="YD2-R9-qJl"/>
+                                <constraint firstAttribute="trailing" secondItem="tj1-4W-8IU" secondAttribute="trailing" id="aqe-J4-8dk"/>
+                                <constraint firstItem="U8G-va-iFU" firstAttribute="leading" secondItem="vw9-QB-CZA" secondAttribute="leading" constant="14.5" id="f3t-R7-bLp"/>
+                                <constraint firstItem="qV0-tW-oSh" firstAttribute="top" secondItem="vw9-QB-CZA" secondAttribute="top" constant="23" id="lmj-AI-SlF"/>
+                                <constraint firstAttribute="bottom" secondItem="uxN-rI-vGK" secondAttribute="bottom" constant="14" id="qwX-mF-GUI"/>
+                                <constraint firstItem="uxN-rI-vGK" firstAttribute="centerX" secondItem="vw9-QB-CZA" secondAttribute="centerX" id="wmK-7S-9rJ"/>
+                                <constraint firstAttribute="trailing" secondItem="ODy-2y-08k" secondAttribute="trailing" constant="10" id="xLE-Dz-8jX"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="v1e-3j-J5W">
+                            <rect key="frame" x="165" y="155" width="15" height="6"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="DBQ-jr-6D7"/>
+                                <constraint firstAttribute="width" constant="15" id="OMy-5D-tnR"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="v1e-3j-J5W" firstAttribute="centerX" secondItem="JtB-7Q-a73" secondAttribute="centerX" id="Js3-ab-dP2"/>
+                        <constraint firstItem="vw9-QB-CZA" firstAttribute="top" secondItem="JtB-7Q-a73" secondAttribute="top" id="P2j-BV-tD7"/>
+                        <constraint firstAttribute="height" constant="169.5" id="SMs-tZ-vvw"/>
+                        <constraint firstAttribute="trailing" secondItem="vw9-QB-CZA" secondAttribute="trailing" id="dhk-Xc-jdW"/>
+                        <constraint firstItem="vw9-QB-CZA" firstAttribute="leading" secondItem="JtB-7Q-a73" secondAttribute="leading" id="elL-5a-n9W"/>
+                        <constraint firstItem="v1e-3j-J5W" firstAttribute="top" secondItem="vw9-QB-CZA" secondAttribute="bottom" id="fm7-pk-yVI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.61100706329999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JtB-7Q-a73" secondAttribute="trailing" constant="16" id="1J2-sd-1iM"/>
+                <constraint firstItem="JtB-7Q-a73" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="fgq-Ka-038"/>
+                <constraint firstItem="JtB-7Q-a73" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-1.5" id="hNB-3t-KnN"/>
+                <constraint firstItem="JtB-7Q-a73" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-11.75" id="j59-Zk-Vqw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="large-x" width="18" height="18"/>
+        <image name="tip" width="22" height="11"/>
+    </resources>
+</document>
